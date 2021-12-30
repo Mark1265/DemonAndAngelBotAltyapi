@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const db = require('quick.db');
 //Dcs Ekibi
 exports.run = async(client, message, args) => { 
-const yapımcı = 'Ninja Kedi#6822'
+const yapımcı = 'Anana sor'
 const sabihim = 'DemonAndAngel#4820'
   
   
