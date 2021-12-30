@@ -18,12 +18,12 @@ exports.run = async (client, message, args) => {
        return;
     }
     //SUNUCU KOMUTU
-      if(args[0] === "Sunucu" || args[0] === "sunucu") {
+      if(args[0] === "Mal" || args[0] === "mal") {
               let Sunucu = new Discord.MessageEmbed()
-  .setAuthor('Sunucu', message.author.displayAvatarURL())
+  .setAuthor('mal', message.author.displayAvatarURL())
   .setColor('#2667FF')
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
-   .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Sunucu').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
+   .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'mal').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
         .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
               return message.channel.send(Sunucu)
          
