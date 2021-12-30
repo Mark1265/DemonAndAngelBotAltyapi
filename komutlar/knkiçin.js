@@ -2,8 +2,11 @@ const Discord = require('discord.js');
 const db = require('quick.db');
 //Dcs Ekibi
 exports.run = async(client, message, args) => { 
-
-message.channel.send("DemonAndAngel  sahibime beni yapmasıni söyledi ve ben oluştum hepinize merhaba :)")
+const yapımcı = 'Ninja Kedi#6822'
+const sabihim = 'DemonAndAngel#4820'
+  
+  
+message.channel.send("`" + sabihim + "`  `" + yapımcı + "` beni yapmasıni söyledi ve ben oluştum hepinize merhaba :)")
 }
 exports.conf = {
   enabled: true,  
