@@ -27,6 +27,6 @@ exports.conf = {
 };
 exports.help = {
   name: 'ascii',
-   description: 'Ascii şeklinde yazı yazmanızı sağlar.',
+   description: 'Ascii şeklinde mal olmanızı ve sikilmenizi sağlar.',
   usage: 'ascii <mesaj>'
 };

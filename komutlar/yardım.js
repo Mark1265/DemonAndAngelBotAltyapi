@@ -4,14 +4,14 @@ const ayarlar = require('../ayarlar.json')
 exports.run = async (client, message, args) => {
     var prefix = ayarlar.prefix;
 
-//GENEL KOMUTU
-    if(args[0] === "Genel" || args[0] === "genel" || args[0] === "General" || args[0] === "general") {
+//Malsın KOMUTU
+    if(args[0] === "Malsın" || args[0] === "MALSIN" || args[0] === "You're Stupid" || args[0] === "you're stupid") {
               let Genel = new Discord.MessageEmbed()
   .setAuthor('Genel', message.author.displayAvatarURL())
   .setColor('#2667FF')
-  .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
+  .setFooter('Bu komutu kullanan yarrak ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Genel').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+        .addField("» Linkler", ` [Malsın](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
               return message.channel.send(Genel)
          
        
@@ -38,7 +38,7 @@ exports.run = async (client, message, args) => {
   .setColor('#2667FF')
   .setFooter('Bu komutu kullanan kullanıcı ' + message.author.tag, message.author.displayAvatarURL())
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Eğlence').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
-        .addField("» Linkler", ` [Davet Et](https://discord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
+        .addField("» Linkler", ` [ananın amı](https://anadiscord.com/oauth2/authorize?client_id=BOTUNİDSİ&scope=bot&permissions=2108157183)` + "** | **" + `[Destek Sunucusu](https://discord.gg/2vPdmYz)`  + "** | **" + `[Oy Ver](https://bit.ly/3980hKq)`  + "** | **" + `[Web Sitesi](https://gnarge.xyz/)  `, false)
    return message.channel.send(Eğlence)
   
       

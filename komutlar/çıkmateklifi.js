@@ -7,7 +7,7 @@ const Discord = require('discord.js')
         if(!kullanıcı){
             const cmfhata = new Discord.MessageEmbed()
             .setColor('#ff0000')
-            .setDescription(`**Çıkma Teklifi Edeceğin Kullanıcıyı Etiketle**`)
+            .setDescription(`**Çıkma Teklifi Edeceğin Kullanıcıyı Etiketle Beinsiz Yarrak **`)
             return message.channel.send(cmfhata)
         }
 
@@ -53,7 +53,7 @@ const Discord = require('discord.js')
 exports.conf = {
     enabled: true,
     guildOnly: false,
-    aliases: ['çıkma-teklifi','Çıkma-teklifi','ÇIKMA-TEKLİFİ','Çıkmateklifi'],
+    aliases: ['çıkma-teklifi','Çıkma-teklifi','ÇIKMA-ananınamıTEKLİFİ','Çıkmateklifi'],
     permLevel: 0
 }
 
