@@ -1,4 +1,5 @@
 dependencies:
+  common-tags: 1.8.2
   crypto: 1.0.1
   crypto-js: 4.1.1
   discord.js: 12.5.3
@@ -114,6 +115,12 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  /common-tags/1.8.2:
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==
   /console-control-strings/1.1.0:
     dev: false
     resolution:
@@ -657,6 +664,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  common-tags: ^1.8.2
   crypto: ^1.0.1
   crypto-js: ^4.1.1
   discord.js: ^12.5.1
