@@ -5,7 +5,7 @@ module.exports.run = (client, message, args, tools) => {
   var sınır = 75 // Kendiniz en yüksek harf sayısını ayarlayabilirsiniz
   
   if(args.join(' ').length > sınır) return message.channel.send(`Çok karakter yazdınız. En fazla ${sınır} karakter yazabilirsin!`) 
-     if(!args[0]) return message.channel.send('Ben senin taşşaklarını koparim piç malsın');
+     if(!args[0]) return message.channel.send('Lütfen geçerli yazı giriniz.');
   
   figlet(`${args.join(' ')}`, function(err, data) {
       if (err) {
@@ -27,6 +27,6 @@ exports.conf = {
 };
 exports.help = {
   name: 'ascii',
-   description: 'Ascii şeklinde mal olmanızı ve sikilmenizi sağlar.',
+   description: 'Ascii şeklinde yazı yazmanızı sağlar.',
   usage: 'ascii <mesaj>'
 };
